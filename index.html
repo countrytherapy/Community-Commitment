@@ -5,28 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Community Commitment | Country Therapy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
+
+    <!-- ===========================
+         NAVBAR
+    ============================ -->
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="logowhite.png" alt="Country Therapy Logo">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#collaborate">Collaborate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===========================
+         HERO
+    ============================ -->
+    <section class="hero" id="hero">
         <div class="hero-content">
             <h1>Our Community Commitment</h1>
             <p>Bringing high-quality, mobile occupational therapy to regional Victoria empowering children, families, and communities right where they are.</p>
         </div>
-    </header>
+    </section>
 
+    <!-- ===========================
+         INTRODUCTION
+    ============================ -->
     <section class="intro">
         <div class="container">
             <h2>Transforming Lives in Regional Victoria</h2>
             <p>We travel to homes, schools, and facilities in towns like Stawell, Ararat, Horsham, Nhill, and beyond — removing barriers to care and helping people live more independently and meaningfully.</p>
         </div>
+                <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="counter" data-target="500">0</div>
+                    <p>Clients Supported</p>
+                </div>
+                <div class="stat-card">
+                    <div class="counter" data-target="25000">0</div>
+                    <p>Km Travelled in 2025</p>
+                </div>
+                <div class="stat-card">
+                    <div class="counter" data-target="40">0</div>
+                    <p>Partners</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="programs">
+    <!-- ===========================
+         PROGRAMS
+    ============================ -->
+    <section class="programs" id="programs">
         <div class="container">
             <h2>Our Community Programs</h2>
             <div class="programs-grid">
+
                 <div class="program-card pro-bono">
                     <i class="fas fa-hand-holding-heart icon"></i>
                     <h3>Pro Bono Work</h3>
@@ -52,60 +99,49 @@
                     </ul>
                     <p class="impact-stat">Empowered hundreds of students to thrive.</p>
                     <div class="brochure">
-                        <a href="path/to/empower-ed-brochure.pdf" target="_blank" class="btn secondary">
+                        <a href="path/to/empower-ed-brochure.pdf" target="_blank" class="brochure-btn">
                             <i class="fas fa-file-pdf"></i> Download EmpowerEd Brochure
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
-    <section class="impact">
+    <!-- ===========================
+         TIMELINE CARDS
+    ============================ -->
+    <section class="timeline-cards" id="impact">
         <div class="container">
-            <h2>Our Impact</h2>
-            <div class="stats">
-                <div class="stat">
-                    <div class="counter" data-target="500">0</div>
-                    <p>Clients supported</p>
+            <h2>Our Journey & Impact</h2>
+            <div class="timeline-cards-grid">
+                <div class="timeline-card">
+                    <i class="fas fa-rocket card-icon"></i>
+                    <h3>Launch</h3>
+                    <p>Mobile services started in Stawell — 50+ families in year one.</p>
                 </div>
-                <div class="stat">
-                    <div class="counter" data-target="25000">0</div>
-                    <p>Km travelled in 2025</p>
+                <div class="timeline-card">
+                    <i class="fas fa-handshake card-icon"></i>
+                    <h3>Growth</h3>
+                    <p>Partnerships with DFFH for tenancy support.</p>
                 </div>
-                <div class="stat">
-                    <div class="counter" data-target="40">0</div>
-                    <p>Partners</p>
-                </div>
-            </div>
-            <!-- Timeline (kept short) -->
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Launch</h3>
-                        <p>Mobile services started in Stawell — 50+ families in year one.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Growth</h3>
-                        <p>Partnerships with DFFH for tenancy support.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="content">
-                        <h3>Today</h3>
-                        <p>500+ clients • 25,000+ km • 40+ partnerships.</p>
-                    </div>
+                <div class="timeline-card">
+                    <i class="fas fa-users card-icon"></i>
+                    <h3>Today</h3>
+                    <p>500+ clients • 25,000+ km • 40+ partnerships.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="collaborate">
+    <!-- ===========================
+         COLLABORATE SECTION
+    ============================ -->
+    <section class="collaborate" id="collaborate">
         <div class="container">
             <h2>See Our Impact & Partner with Us</h2>
             <div class="collaborate-grid">
+
                 <div class="card video-card">
                     <h3>See Our Impact in Action</h3>
                     <p>Watch occupational therapy making a real difference in regional communities.</p>
@@ -117,10 +153,10 @@
                     </div>
                 </div>
 
-                <div class="card form-card">
+                <div class="card form-card" id="contact">
                     <h3>Partner with Us</h3>
                     <p>Schools, organisations, or groups — let's extend OT to more communities.</p>
-                    <form action="#" method="post">
+                    <form action="#" method="post" class="contact-form">
                         <div class="form-group">
                             <input type="text" id="name" required placeholder=" ">
                             <label for="name">Your Name *</label>
@@ -141,44 +177,56 @@
                             <label for="message">How can we collaborate?</label>
                             <i class="fas fa-comment-dots"></i>
                         </div>
-                        <button type="submit" class="btn primary">Submit Interest</button>
+                        <button type="submit" class="submit-btn">Submit Interest</button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
 
+    <!-- ===========================
+         FOOTER
+    ============================ -->
     <footer>
         <div class="container">
-            <p>© Country Therapy Pty Ltd | Mobile Occupational Therapy Across Regional Victoria | <a href="https://countrytherapy.com.au">Visit Main Site</a></p>
+            <p>© Country Therapy Pty Ltd</p>
         </div>
     </footer>
 
+    <!-- ===========================
+         COUNTER SCRIPT
+    ============================ -->
     <script>
         const counters = document.querySelectorAll('.counter');
-        const observer = new IntersectionObserver((entries) => {
+
+        const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
                     const target = +counter.getAttribute('data-target');
                     let count = 0;
                     const speed = 150;
-                    const inc = target / speed;
-                    const update = () => {
-                        count += inc;
+                    const increment = target / speed;
+
+                    const updateCounter = () => {
+                        count += increment;
                         if (count < target) {
                             counter.innerText = Math.ceil(count);
-                            requestAnimationFrame(update);
+                            requestAnimationFrame(updateCounter);
                         } else {
                             counter.innerText = target + '+';
                         }
                     };
-                    update();
+
+                    updateCounter();
                     observer.unobserve(counter);
                 }
             });
         }, { threshold: 0.3 });
-        counters.forEach(c => observer.observe(c));
+
+        counters.forEach(counter => observer.observe(counter));
     </script>
+
 </body>
 </html>
