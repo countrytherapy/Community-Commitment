@@ -28,7 +28,7 @@ body {
 =================================== */
 .navbar {
     background-color: #ffffff;
-    padding: 20px 0;
+    height: 120px; /* force vertical space */
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -36,9 +36,14 @@ body {
 }
 
 .navbar-content {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    flex-shrink: 0; /* prevent logo collapse */
 }
 
 .logo img {
@@ -49,17 +54,26 @@ body {
 .nav-menu ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    gap: 30px; /* better than margin-left */
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu li {
-    margin-left: 30px;
+    flex-shrink: 0; /* stops text squish */
 }
 
 .nav-menu a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 16px 0; /* vertical stretch */
+    line-height: 1.6; /* key for text spacing */
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     color: #333;
-    font-weight: 600;
-    font-size: 18px;
     transition: all 0.3s ease;
 }
 
@@ -68,12 +82,13 @@ body {
     transform: translateY(-2px);
 }
 
+
 /* ===================================
 3. HERO
 =================================== */
 .hero {
     background-color: #2563eb;
-    background-image: url('assets/hero.png');
+    background-image: url('otimage.png');
     background-size: cover;
     background-position: center;
     color: #fff;
