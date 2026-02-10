@@ -151,84 +151,97 @@
     <!-- ===========================
          COLLABORATE SECTION
     ============================ -->
-<div class="collaborate-grid">
+<section class="collaborate" id="collaborate">
+    <div class="container">
 
-    <!-- LEFT COLUMN -->
-    <div class="collaborate-left">
+        <h2>See Our Impact & Partner with Us</h2>
 
-        <div class="card video-card">
-            <h3>See Our Impact in Action</h3>
-            <p>Watch occupational therapy making a real difference in regional communities.</p>
+        <div class="collaborate-grid">
 
-            <div class="video-wrapper">
-                <iframe
-                    src="https://youtu.be/XJ_T4XDxcn4?si=28u_YIA0_Ul10eTY"
-                    allowfullscreen>
-                </iframe>
+            <!-- LEFT COLUMN -->
+            <div class="collaborate-left">
+
+                <div class="card video-card">
+                    <h3>See Our Impact in Action</h3>
+                    <p>Watch occupational therapy making a real difference in regional communities.</p>
+
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/XJ_T4XDxcn4"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-footer">
+                        <p>Every visit builds stronger families and healthier towns — one kilometre at a time.</p>
+                    </div>
+                </div>
+
+                <div class="socials-card">
+                    <p class="socials-title">Connect with us</p>
+
+                    <div class="socials-buttons">
+                        <a href="https://www.instagram.com/countrytherapy_au/"
+                           target="_blank"
+                           class="social-btn instagram">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/country-therapy-victoria/"
+                           target="_blank"
+                           class="social-btn linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="video-footer">
-                <p>Every visit builds stronger families and healthier towns — one kilometre at a time.</p>
-            </div>
-        </div>
-
-        <div class="socials-card">
-            <p class="socials-title">Connect with us</p>
-
-            <div class="socials-buttons">
-                <a href="https://www.instagram.com/countrytherapy_au/"
-                   target="_blank"
-                   class="social-btn instagram">
-                    <i class="fab fa-instagram"></i>
-                    Instagram
-                </a>
-
-                <a href="https://www.linkedin.com/company/country-therapy-victoria/posts/?feedView=all"
-                   target="_blank"
-                   class="social-btn linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- RIGHT COLUMN -->
+<!-- RIGHT COLUMN -->
+<div class="collaborate-right">
     <div class="card form-card" id="contact">
         <h3>Partner with Us</h3>
         <p>Schools, organisations, or groups — let's extend OT to more communities.</p>
 
         <form action="#" method="post" class="contact-form">
+
             <div class="form-group">
-                <input type="text" id="name" required placeholder=" ">
+                <input type="text" id="name" name="name" required placeholder=" ">
                 <label for="name">Your Name *</label>
                 <i class="fas fa-user"></i>
             </div>
 
             <div class="form-group">
-                <input type="email" id="email" required placeholder=" ">
+                <input type="email" id="email" name="email" required placeholder=" ">
                 <label for="email">Your Email *</label>
                 <i class="fas fa-envelope"></i>
             </div>
 
             <div class="form-group">
-                <input type="text" id="organization" placeholder=" ">
+                <input type="text" id="organization" name="organization" placeholder=" ">
                 <label for="organization">Organisation / School</label>
                 <i class="fas fa-building"></i>
             </div>
 
             <div class="form-group">
-                <textarea id="message" rows="5" placeholder=" "></textarea>
+                <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
                 <label for="message">How can we collaborate?</label>
                 <i class="fas fa-comment-dots"></i>
             </div>
 
             <button type="submit" class="submit-btn">Submit Interest</button>
+
         </form>
     </div>
-
 </div>
+
+
+        </div>
+    </div>
+</section>
+
 
     <!-- ===========================
          FOOTER

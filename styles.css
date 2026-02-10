@@ -277,6 +277,15 @@ body {
 .timeline-card:hover {
     transform: translateY(-8px);
 }
+.card {
+    padding: 36px 32px;
+}
+.video-card,
+.form-card,
+.socials-card {
+    max-width: 100%;
+    overflow: hidden;
+}
 
 .card-icon {
     font-size: 40px;
